@@ -20,3 +20,14 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('shortner.urls'))
 ]
+
+# Example of a "null pointer exception" in Python
+ 
+# Initialize variable as None
+my_variable = None
+ 
+# Try to access an attribute or method of None (this will raise an AttributeError)
+try:
+    my_variable.some_method()  # This will fail because None has no attribute 'some_method'
+except AttributeError as e:
+    print(f"Error: {e}")
