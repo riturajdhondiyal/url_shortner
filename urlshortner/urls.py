@@ -20,3 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('shortner.urls'))
 ]
+
+my_variable = None
+print(my_variable[0])  # Trying to access an index of None will raise a TypeError
